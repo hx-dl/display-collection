@@ -26,15 +26,32 @@
 
 ---
 
-## 将多步骤的人工操作简化为单独的命令
+## 1.基于各包的最新稳定版本搭建
+
+- electron v10.1.5
+- webpack v4.44.3
+- react全家桶 最新
+
+...
+
+---
+## 2.项目目录结构重新设计
+
+![项目目录结构](./pudding.png)
+
+---
+## 3.更合理的构建配置
 
 ---
 
-## 将多步骤的人工操作简化为单独的命令
+## 4.将多步骤的人工操作简化为单独的命令
 
 ---
 
-## 项目文档&组件库
+## 一些额外的想法
+---
+
+## 1. 集成项目文档&项目级组件库
 
 ---
 
@@ -44,118 +61,38 @@
 
 - 以我们部门的情况，没有人能够在即顾及项目组开发任务的同时来维护公共组件
 
----
-
-## 完成情况演示
+- 不是刚需
 
 ---
+## 2. 代码格式化 & commit 规范化
 
-## 项目结构设计
-
-![项目结构设计图](./pudding.png)
-
----
-
-### Import in Script
-
-```html
-<script>
-  import MarkDisplay from 'vue-mark-display'
-  export default {
-    components: { MarkDisplay }
-  }
-</script>
-```
+- 基于 prettier + git hook 统一格式化处理
+- 基于 commitizen 定制commit内容
 
 ---
 
-### Use in Template
+## 3. 自制webpack loader、plugin 减少对代码的侵入性
 
-```html
-<template>
-  <MarkDisplay markdown="..." />
-</template>
-```
+--- 
 
----
+## 处理main.dev.js 
 
-You can use [Markdown](https://commonmark.org/help/) to write slides.
+![](./main-loader.png)
 
-For example:
+--- 
+
+## 通过 plugin 加载 chrome 插件
 
 ---
 
-# Heading 1
+## 未来工作
 
-## Heading 2
+ - 脚手架 cli
+ - 基于模块封装如 ajax、加解密模块
+ - 客户端热更新完善
+ - 单元测试工具集成
 
-### Heading 3
-
-paragraph
-
----
-
-### Table
-
-| Foo | Bar | Baz |
-| --- | --- | --- |
-| 1   | 2   | 3   |
-| 4   | 5   | 6   |
 
 ---
 
-You can also do some extensions by your own:
-
----
-
-1. set your code highlighted
-
-```js
-export default {
-  data() {
-    return {
-      msg: 'Highlighted!'
-    }
-  }
-}
-```
-
----
-
-2. or support touch events
-
-Try to **SWIPE horizontally** on the touch screen.
-
----
-
-<!-- style: color: blue; font-family: monospace; -->
-
-3. custom background using meta syntax
-
-`<!-- style: color: blue; font-family: monospace; -->`
-
----
-
-4. reset base url
-
-```html
-<MarkDisplay ... baseUrl="https://github.com/" />
-```
-
-![](./favicon.ico) this is the `./favicon.ico`
-
----
-
-At almost the end:
-
-You can press **<kbd>⌘+P</kbd>** to print your slides into PDF.
-
-<small>you can have a try _now_</small>
-
----
-
-More about me:
-
-https://github.com/jinjiang/vue-mark-display
-
-Thanks
+## Thanks
