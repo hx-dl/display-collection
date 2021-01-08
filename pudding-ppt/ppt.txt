@@ -1,0 +1,161 @@
+# 基于 Electron + React 的新版客户端开发框架
+
+进展同步 以及 未来规划 研讨会
+
+---
+
+## 为什么做？
+
+---
+
+## 目前项目开发框架的一些问题
+
+<br/>
+
+1.基础设施老化，易与第三方库的不兼容
+
+2.使用繁琐，效率低、开发体验差
+
+3.项目结构凌乱、部分代码设置不合理
+
+...
+
+---
+
+## 针对已知的问题，新框架做了什么？
+
+---
+
+## 将多步骤的人工操作简化为单独的命令
+
+---
+
+## 将多步骤的人工操作简化为单独的命令
+
+---
+
+## 项目文档&组件库
+
+---
+
+## 为什么不是公共组件库？
+
+- 业内的 antd 等组件库在设计和代码实现上都非常友好完善，没有必要重复造轮子
+
+- 以我们部门的情况，没有人能够在即顾及项目组开发任务的同时来维护公共组件
+
+---
+
+## 完成情况演示
+
+---
+
+## 项目结构设计
+
+![项目结构设计图](./pudding.png)
+
+---
+
+### Import in Script
+
+```html
+<script>
+  import MarkDisplay from 'vue-mark-display'
+  export default {
+    components: { MarkDisplay }
+  }
+</script>
+```
+
+---
+
+### Use in Template
+
+```html
+<template>
+  <MarkDisplay markdown="..." />
+</template>
+```
+
+---
+
+You can use [Markdown](https://commonmark.org/help/) to write slides.
+
+For example:
+
+---
+
+# Heading 1
+
+## Heading 2
+
+### Heading 3
+
+paragraph
+
+---
+
+### Table
+
+| Foo | Bar | Baz |
+| --- | --- | --- |
+| 1   | 2   | 3   |
+| 4   | 5   | 6   |
+
+---
+
+You can also do some extensions by your own:
+
+---
+
+1. set your code highlighted
+
+```js
+export default {
+  data() {
+    return {
+      msg: 'Highlighted!'
+    }
+  }
+}
+```
+
+---
+
+2. or support touch events
+
+Try to **SWIPE horizontally** on the touch screen.
+
+---
+
+<!-- style: color: blue; font-family: monospace; -->
+
+3. custom background using meta syntax
+
+`<!-- style: color: blue; font-family: monospace; -->`
+
+---
+
+4. reset base url
+
+```html
+<MarkDisplay ... baseUrl="https://github.com/" />
+```
+
+![](./favicon.ico) this is the `./favicon.ico`
+
+---
+
+At almost the end:
+
+You can press **<kbd>⌘+P</kbd>** to print your slides into PDF.
+
+<small>you can have a try _now_</small>
+
+---
+
+More about me:
+
+https://github.com/jinjiang/vue-mark-display
+
+Thanks
