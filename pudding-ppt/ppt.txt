@@ -87,7 +87,7 @@
 
 ## 客户端热更新
 
-![](https://github.com/hx-dl/electron-ts-react-boilerplate/blob/master/docs/public/build.png)
+![](https://raw.githubusercontent.com/hx-dl/electron-ts-react-boilerplate/master/docs/public/build.png)
 
 ---
 
