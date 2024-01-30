@@ -85,11 +85,16 @@
 
 ---
 
+## 客户端热更新
+
+![](https://github.com/hx-dl/electron-ts-react-boilerplate/blob/master/docs/public/build.png)
+
+---
+
 ## 未来工作
 
  - 脚手架 cli
  - 基于模块封装如 ajax、加解密模块
- - 客户端热更新完善
  - 单元测试工具集成
 
 
