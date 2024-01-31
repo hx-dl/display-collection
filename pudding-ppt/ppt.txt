@@ -40,13 +40,30 @@
 ![项目目录结构](./pudding.png)
 
 ---
-## 3.更合理的构建配置
+
+## 3.将多步骤的人工操作简化为单独的命令
 
 ---
 
-## 4.将多步骤的人工操作简化为单独的命令
+---
+## 4.更合理的构建配置及链路
+
+完整的构建链路图
+![](https://raw.githubusercontent.com/hx-dl/electron-ts-react-boilerplate/master/docs/public/build.png)
 
 ---
+## 5. 团队常用脚本转为内置的 webpack loader、plugin
+
+如：
+1. 处理main.dev.js 
+![](./main-loader.png)
+
+2. 通过 plugin 集成 chrome 调试插件
+
+--- 
+
+## 6. 完备的客户端热更新系统
+
 
 ## 一些额外的想法
 ---
@@ -55,7 +72,7 @@
 
 ---
 
-## 为什么不是公共组件库？
+## 2. 为什么不做公共组件库？
 
 - 业内的 antd 等组件库在设计和代码实现上都非常友好完善，没有必要重复造轮子
 
@@ -64,30 +81,10 @@
 - 不是刚需
 
 ---
-## 2. 代码格式化 & commit 规范化
+## 3. 代码格式化 & commit 规范化
 
 - 基于 prettier + git hook 统一格式化处理
 - 基于 commitizen 定制commit内容
-
----
-
-## 3. 自制webpack loader、plugin 减少对代码的侵入性
-
---- 
-
-## 处理main.dev.js 
-
-![](./main-loader.png)
-
---- 
-
-## 通过 plugin 加载 chrome 插件
-
----
-
-## 客户端热更新
-
-![](https://raw.githubusercontent.com/hx-dl/electron-ts-react-boilerplate/master/docs/public/build.png)
 
 ---
 
