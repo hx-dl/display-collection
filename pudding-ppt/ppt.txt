@@ -40,16 +40,13 @@
 ![项目目录结构](./pudding.png)
 
 ---
+## 3.更合理的构建配置及链路
 
-## 3.将多步骤的人工操作简化为单独的命令
-
----
-
----
-## 4.更合理的构建配置及链路
-
-完整的构建链路图
 ![](https://raw.githubusercontent.com/hx-dl/electron-ts-react-boilerplate/master/docs/public/build.png)
+
+---
+
+## 4.开发调试体验改进
 
 ---
 ## 5. 团队常用脚本转为内置的 webpack loader、plugin
@@ -62,7 +59,7 @@
 
 --- 
 
-## 6. 完备的客户端热更新系统
+## 6. 客户端自动更新机制
 
 
 ## 一些额外的想法
